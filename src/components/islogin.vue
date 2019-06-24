@@ -1,16 +1,16 @@
 <template>
   <div>
     <div style="text-align: center; padding: 10px; border-bottom: 1px solid gainsboro">
-      <span>搜输入搜索关键词: </span>
+      <span>Please input key word: </span>
       <el-input style="width: 200px;" v-model="name"/>
-      <el-button @click="search">搜索</el-button>
+      <el-button @click="search">search</el-button>
     </div>
     <div>
       <div v-if="data.length > 0">
-        <img v-for="item in data" :src="item.data" style=" width: 200px; height: 200px; padding: 10px; "/>
+        <img v-for="item in data" :src="item" style=" width: 200px; height: 200px; padding: 10px; "/>
       </div>
       <div v-else style="margin: 0 auto; padding: 40px; text-align: center">
-        暂无更多内容
+        no more content......
       </div>
     </div>
   </div>
