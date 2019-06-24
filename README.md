@@ -1,27 +1,16 @@
 # project
 
-> A Vue.js project
+This is the gui for technical exercise by Izzy
 
 ## Build Setup
 
 ``` bash
-# install dependencies
+# install dependencies 
 npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+go to backend repo : https://github.com/cxcxcx89611/OktaFlickrSpringIntegration_backend
+follow  steps in READ.ME
+ 
