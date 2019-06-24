@@ -1,16 +1,16 @@
 <template>
   <div>
     <div style="text-align: center; padding: 10px; border-bottom: 1px solid gainsboro">
-      <span>please input the key word you want to search: </span>
+      <span>搜输入搜索关键词: </span>
       <el-input style="width: 200px;" v-model="name"/>
-      <el-button @click="search">search</el-button>
+      <el-button @click="search">搜索</el-button>
     </div>
     <div>
       <div v-if="data.length > 0">
         <img v-for="item in data" :src="item.data" style=" width: 200px; height: 200px; padding: 10px; "/>
       </div>
       <div v-else style="margin: 0 auto; padding: 40px; text-align: center">
-        no more content to be displayed
+        暂无更多内容
       </div>
     </div>
   </div>
@@ -38,6 +38,7 @@
         })
         s.then(res => {
           console.log(res.data.data)
+          this.data = res.data.data;
         })
         console.log(s)
       }
