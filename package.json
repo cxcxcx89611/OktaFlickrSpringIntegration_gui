@@ -5,7 +5,7 @@
   "author": "izzychen0611@gmail.com",
   "private": true,
   "engines": {
-    "node": "8.X.X",
+    "node": ">= 8.0.0",
     "npm": ">= 3.0.0"
   },
   "scripts": {
