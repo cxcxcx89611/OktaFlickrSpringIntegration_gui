@@ -2,9 +2,14 @@
   "name": "project",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "651788064@qq.com <651788064@qq.com>",
+  "author": "izzychen0611@gmail.com",
   "private": true,
+  "engines": {
+    "node": ">= 8.0.0",
+    "npm": ">= 3.0.0"
+  },
   "scripts": {
+    "deploy": "gcloud app deploy",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "test": "npm run unit",
@@ -14,7 +19,8 @@
     "axios": "^0.19.0",
     "element-ui": "^2.9.2",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "express": "^4.16.3"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -51,12 +57,11 @@
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "@google-cloud/nodejs-repo-tools": "^3.3.0"
   },
-  "engines": {
-    "node": ">= 6.0.0",
-    "npm": ">= 3.0.0"
-  },
+  "requiresKeyFile": true,
+  "requiresProjectId": true,
   "browserslist": [
     "> 1%",
     "last 2 versions",
