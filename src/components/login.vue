@@ -18,7 +18,7 @@
     },
     methods: {
       login() {
-        location.href =  "https://localhost:8443/"
+        location.href =  "https://35.188.162.0:8443"
       },
     }
   }
