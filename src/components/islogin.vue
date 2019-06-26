@@ -10,7 +10,7 @@
         <img v-for="item in data" :src="item" style=" width: 200px; height: 200px; padding: 10px; "/>
       </div>
       <div v-else style="margin: 0 auto; padding: 40px; text-align: center">
-        no more content to be displayed
+         No more content
       </div>
     </div>
   </div>
@@ -37,8 +37,8 @@
           method: 'get',
         })
         s.then(res => {
-          console.log(res.data.data)
-          this.data = res.data.data;
+          console.log(res.data)
+          this.data = res.data;
         })
         console.log(s)
       }
