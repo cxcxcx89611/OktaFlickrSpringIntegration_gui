@@ -29,7 +29,7 @@
     methods: {
       search() {
         const reqServer = this.$axios.create({
-          baseURL: "https://localhost:8443", // api 的 base_url
+          baseURL: "https://35.188.162.0:8443", // api 的 base_url
           timeout: 100000,
         })
         const s = reqServer({
